@@ -1,0 +1,10 @@
+# CS03A - Summer 2024
+#  Lab2 - Challenge1
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+import AgeClassifier, CaloriesBurned
+
+print("Lab 2 Challenge 1")
+AgeClassifier.run()
+CaloriesBurned.run()
