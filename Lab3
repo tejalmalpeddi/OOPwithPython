@@ -1,0 +1,24 @@
+# Foothill College
+# CS 03B - Object Oriented Programming Methodologies in Python
+# Lab #3 Challenge 2 Maximum of Two Values
+# Student Name: Tejal Malpeddi
+# Email: tejalmalpeddi@gmail.com
+# Student ID: 20618616
+
+def max(a, b):
+  if a > b:
+      return a
+  else:
+      return b
+
+def main():
+  print("Lab 3 Challenge 2 Maximum of Two Values")
+
+  first = int(input("Enter the first integer: "))
+  second = int(input("Enter the second integer: "))
+
+  maximum = max(first, second)
+
+  print(f"The greater value is: {maximum}")
+
+main()
