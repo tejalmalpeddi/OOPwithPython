@@ -8,3 +8,30 @@ import AgeClassifier, CaloriesBurned
 print("Lab 2 Challenge 1")
 AgeClassifier.run()
 CaloriesBurned.run()
+
+# CS03A - Summer 2024
+#  Lab2 - Challenge1- Age Classifier
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  age = int(input("What is the person's age? "))
+
+  if age<=1:
+    print("They are an infant.")
+  elif age>1 and age<13:
+    print("They are a child.")
+  elif age>=13 and age<20:
+    print("They are a teenager.")
+  else:
+    print("They are an adult.")
+
+# CS03A - Summer 2024
+#  Lab2 - Challenge1 - Calories Burned
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  for num in range (10,31,5):
+    print("You burn",num*4.2,"calories in",num,"minutes.")
+  
