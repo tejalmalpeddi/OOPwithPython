@@ -1,0 +1,88 @@
+# CS03A - Summer 2024
+#  Assignment 2 - Question 1
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  print("===== Question 1 =====")
+  def falling_distance(t):
+    g = 9.8
+    d = 0.5 * g * t ** 2
+    return d
+
+  for time in range(1, 11):
+    distance = falling_distance(time)
+    print(f"Time: {time} seconds, Distance: {distance:.2f} meters")
+
+# CS03A - Summer 2024
+#  Assignment 2 - Question 2
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  print("===== Question 2 =====")
+  num = int(input("Enter an integer greater than 1: "))
+  if num <= 1:
+        print("The number must be greater than 1.")
+        return
+
+  def is_prime(n):
+        if n <= 1:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+
+  print("Prime numbers up to", num, "are:")
+  for number in range(2, num + 1):
+    if is_prime(number):
+        print(number, end=" ")
+  print()
+
+# CS03A - Summer 2024
+#  Assignment 2 - Question 3
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  print("===== Question 3 =====")
+  user_input = input("Enter a string: ")
+
+  sentences = user_input.split('. ')
+  capitalized_sentences = [sentence.capitalize() for sentence in sentences]
+  result = '. '.join(capitalized_sentences)
+
+  print("Capitalized string:")
+  print(result)
+
+# CS03A - Summer 2024
+#  Assignment 2 - Question 4
+# Student Name: Tejal Malpeddi
+# SID: 20618616
+
+def run():
+  print("===== Question 4 =====")
+  
+  name = input("Enter your name: ")
+  description = input("Describe yourself: ")
+
+  html_content = f"""<html>
+  <head>
+  </head>
+  <body>
+  <center>
+  <h1>{name}</h1>
+  </center>
+  <hr />
+  <p>{description}</p>
+  </body>
+  </html>"""
+
+  with open("personal_web_page.html", "w") as file:
+        file.write(html_content)
+
+  print("HTML file 'personal_web_page.html' has been created.")
+
+
+  
